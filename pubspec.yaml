@@ -1,0 +1,19 @@
+name: process_loop
+description: Runs a looping process. Get a stream of stout is obtained from the process.
+version: 0.0.1
+author: 3d24rd0 <3d24rd0@gmail.com>
+homepage: https://github.com/3d24rd0/process_loop
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    
+flutter:
