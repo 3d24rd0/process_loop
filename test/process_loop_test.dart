@@ -3,11 +3,16 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:process_loop/process_loop.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
-    expect(() => calculator.addOne(null), throwsNoSuchMethodError);
+  test('test return of process', () async {
+    final processLoop = ProgressLoop(
+      executable: "echo",
+      arguments: List.of(["hello"]),
+      loop: null,
+    );
+    processLoop.start();
+    final hello = await processLoop.stdout.last;
+    processLoop.stop();
+
+    expect(hello, "hello");
   });
 }
