@@ -2,6 +2,17 @@
 
 A new Flutter package project.
 
+## Example
+```
+ProgressLoop(
+      executable: "echo",
+      arguments: List.of(["hello"]),
+      loop: null,
+    )
+```
+![test](test.png)
+
+
 #### MacOS
 
 If you want to run executable in a MacOS flutter context, you need to disable sandbox mode. See 
