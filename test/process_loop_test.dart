@@ -10,7 +10,7 @@ void main() {
       loop: null,
     );
     processLoop.start();
-    final hello = await processLoop.stdout.last;
+    final hello = await processLoop.stdout.first;
     processLoop.stop();
 
     expect(hello, "hello");
