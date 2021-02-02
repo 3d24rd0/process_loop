@@ -1,4 +1,4 @@
-name: Flutter release
+name: Flutter test package
 on:
   push:
     branches:
