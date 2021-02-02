@@ -11,18 +11,8 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v2 
 
-      - name: credentialJson
-        id: write_file
-        uses: timheuer/base64-to-file@v1
-        with:
-          fileName: ~/.pub-cache/credentials.json
-          encodedString: ${{ secrets.credentialJson }}
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v1
-        with:
-          channel: beta
-
       - name: Publish package
-        run: flutter pub publish -f
-
+        uses: liudonghua123/dart-package-publisher@dev
+        with:
+          accessToken: ${{ secrets.PUB_ACCESS_TOKEN }}
+          refreshToken: ${{ secrets.PUB_REFRESH_TOKEN}}
