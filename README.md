@@ -10,7 +10,7 @@ ProgressLoop(
       loop: null,
     )
 ```
-![test](test.png)
+![test](https://github.com/3d24rd0/process_loop/blob/main/test.png?raw=true)
 
 
 #### MacOS
