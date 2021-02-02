@@ -12,8 +12,8 @@ jobs:
         uses: actions/checkout@v2 
 
       - name: credentialJson
-        id: credentialJson
-        uses: timheuer/base64-to-file@v1.0.3
+        id: write_file
+        uses: timheuer/base64-to-file@v1
         with:
           fileName: ~/.pub-cache/credentials.json
           encodedString: ${{ secrets.credentialJson }}
