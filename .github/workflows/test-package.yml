@@ -8,7 +8,7 @@ on:
       - main
 jobs:
   release:
-    name: Test, build and release android
+    name: Test package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
