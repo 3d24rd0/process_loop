@@ -23,6 +23,6 @@ jobs:
         with:
           channel: beta
 
-      - name: Download pub dependencies
+      - name: Publish package
         run: flutter pub publish
 
