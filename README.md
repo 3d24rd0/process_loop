@@ -1,6 +1,5 @@
 # process_loop
-
-A new Flutter package project.
+[![Pub](https://img.shields.io/pub/v/process_loop.svg)](https://pub.dev/packages/process_loop) [![License: MIT](https://img.shields.io/badge/license-MIT-purple.svg)](https://opensource.org/licenses/MIT)
 
 ## Example
 ```
